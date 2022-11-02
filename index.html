@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eight Lives!</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script src="./Scripts/script.js" defer></script>
+</head>
+<body>
+    <div id="enter-container">
+        <h1>Eight Lives</h1>    
+
+        <p>Enter Word</p>
+        <form id="form1">
+            <input type="password" pattern="[a-z]{1,}" id="word">
+        </form>
+        <p style="color: red; font-size: 15px;
+        margin-top: 20px; display: none;" id="error-code">ENTER A WORD</p>
+        <button id="play">Play!</button>
+    </div>
+
+    <div id="game-container">
+        <div id="man">
+            <div id="lives">
+                <p class="lives-item">I</p>
+                <p class="lives-item">I</p>
+                <p class="lives-item">I</p>
+                <p class="lives-item">I</p>
+                <p class="lives-item">I</p>
+                <p class="lives-item">I</p>
+                <p class="lives-item">I</p>
+                <p class="lives-item">I</p>
+            </div>
+            
+        </div>
+
+        <div id="wrong-letters">
+            <p id="wletters"></p>
+        </div>
+
+        <div id="guess">
+            <div id="letters">
+
+            </div>
+
+            <input type="text" pattern="[a-z]{1,1}" maxlength="1" id="guess-word">
+
+            <button id="guess-btn">Guess!</button>
+        </div>
+    </div>
+
+    <div id="end-screen">
+        <div class="flex-row">
+            <h1>You <span id="outcome">Won/Lost</span></h2>
+            <h1 class="two-text">The Word Was = <span id="word-ag"></span></h1>
+        </div>
+        
+        <a href="./index.html" class="btn-retry">Retry!</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');
+
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Odibee Sans', cursive;
+}
+
+/*/**//*/**//*/**/
+/* Home Design */
+/*/**//*/**//*/*/
+
+#enter-container{
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: aquamarine;
+}
+
+h1{
+    font-size: 150px;
+    padding: 0;
+    margin: 4vh;
+}
+
+p{
+    padding: 0px;
+    margin: 0;
+
+    font-size: 32px;
+}
+
+#play{
+    margin-top: 2vh;
+
+    width: 100px;
+    height: 40px;
+
+    background-color: black;
+    color: white;
+    font-family: 'Odibee Sans', cursive;
+    font-size: 24px;
+    text-align: center;
+
+    border-radius: 5px;
+    border-color: rgb(63, 213, 163);
+    border-width: 5px;
+}
+
+#word{
+    width: 200px;
+    height: 30px;
+    font-size: 38px;
+    
+    text-align: center;   
+}
+
+#play:hover{
+    cursor: pointer;
+}
+
+#form1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*/**//*/**//*/**/
+/* Game Design */
+/*/**//*/**//*/*/
+
+#game-container{
+    width: 100%;
+    height: 100vh;
+
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: aquamarine;
+}
+
+#man{
+    width: 300px;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 5px black solid;
+    background-color: white;
+}
+
+#man-pic{
+    width: 450px;
+    height: 500px;
+
+    margin-left: 14px;
+    margin-top: 15px;
+}
+
+#guess{
+    margin-top: 5vh;
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#guess-word{
+    width: 40px;
+    height: 40px;
+
+    font-size: 38px;
+    font-family: 'Odibee Sans', cursive; 
+
+    text-align: center;
+}
+
+#guess-btn{
+    margin-top: 2vh;
+
+    width: 100px;
+    height: 40px;
+
+    background-color: black;
+    color: white;
+    font-family: 'Odibee Sans', cursive;
+    font-size: 24px;
+    text-align: center;
+
+    border-radius: 5px;
+    border-color: rgb(63, 213, 163);
+    border-width: 5px;
+
+}
+
+form input[tpye ="text"] {
+    text-transform: lowercase;
+}
+
+.DEE{
+    text-decoration: underline;
+    font-size: 40px;
+
+    margin-bottom: 50px;
+    margin-left: 10px;
+}
+
+#letters{
+    display: flex;
+    flex-direction: row;
+}
+
+#lives{
+    font-size: 48px;
+    display: flex;
+    flex-direction: row;
+}
+
+#wrong-letters{
+    width: 300px;
+    min-height: 30px;
+    max-height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 5px black solid;
+    background-color: white;
+    margin-top: 10px;
+}
+
+.lives-item{
+    font-size: 56px;
+}
+
+.red-item{
+    font-size: 56px;
+    color: red;
+}
+
+/*/**//*/**//*/**/
+/*  End Screen  */
+/*/**//*/**//*/*/
+
+#end-screen{
+    width: 100%;
+    height: 100vh;
+
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: aquamarine;
+}
+
+.flex-row{
+    flex-direction: row;
+}
+
+.btn-retry{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 25px;
+    font-size: 44px;
+    border-radius: 25px;
+}
+
+.two-text{
+    margin-top: -1vh;
+    font-size: 30px;
+    text-align: center;
+}
